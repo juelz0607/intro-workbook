@@ -1,0 +1,19 @@
+! is usually interpreted as declaring a statement, where as ? is asking a question
+or "checking" a value in reflection to a boolean return. If used at the
+end of a method, then ! or ? is part of that methods name. 
+
+1. != means "not equal" and can be used as a comparator under the "if"
+    method. 
+
+2. Placing ! before a value returns a true value as false, or vice versa.
+
+3. Placing ! after a method name usually indicates that the method 
+    used will mutate the caller. 
+    
+4. Placing ? before a value can be used as a replacement for the "if"
+    statement. 
+    
+5. Placing ? after a method checks the value that the method was called 
+    upon and returns a boolean value, or the true data. 
+    
+6. Placing !! before a value turns any object into its boolean equivalent.

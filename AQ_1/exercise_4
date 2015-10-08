@@ -1,0 +1,13 @@
+numbers = [1,2,3,4,5]
+
+number.delete_at(1)
+    
+        - This will result in the deletion of the "2" value being 
+        removed because (1) is referencing the value within the 1 
+        slot in the array.
+        
+numbers.delete(1)
+
+        -This will result in the deletion of the "1" value, because 
+        the delete method in this form will erase the mathing value 
+        that it is given. 

@@ -1,0 +1,19 @@
+The result would be 42. This stems from the numerical process of 
+the "recursive" string. i.e. 
+
+    def add_eight(number)
+        number + 8
+    end
+
+    number = 2
+
+    how_deep = "number"
+    5.times { how_deep.gsub!("number", "add_eight(number)") }
+    
+simply means this: how_deep holds the value of "number" as a string. 
+The method called upon how_deep repeats this value five times, while 
+repalcing each instance of "number" (as a string) with "add_eight(number)"
+also as a sting. When the eval method is called, it runs the "add_eight(number)"
+method five times, resulting in 8*5+2.
+
+At least that's my best guess! 
